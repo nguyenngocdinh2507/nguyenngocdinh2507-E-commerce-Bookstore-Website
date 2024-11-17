@@ -1,0 +1,402 @@
+/* 
+    
+    <html>
+    <body>
+    wrapper
+        header 
+            container_header
+        nav
+        banner/slider
+        container
+            sidebar
+                header_sidebar
+                content_sidebar
+            main
+                header_main
+                content_main
+        footer
+            container_footer
+    <body>
+    </html>
+*/
+
+/* 
+    possition : relative : nó xác định tại vị trí nó đang đứng
+    position: absolute; Thẻ cha gần nhất để lấy gốc tọa độ
+    fixed : cố định
+
+*/
+
+
+/* reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* Dùng chung */
+.text-white{
+    color: #fff !important;
+}
+.text-black{
+    color: #000 !important;
+}
+
+.row{
+
+}
+.row::after{
+    content:"";
+    display: flex;
+    clear: both;
+}
+.col{
+    float: left;
+}
+.col-1{
+    width: 100%;
+}
+.col-2{
+    width: 50%;
+}
+.col-3{
+    width: 33.33333%;
+}
+.col-4{
+    width: 25%;
+}
+.col-5{
+    width: 25%;
+}
+.clear{
+    clear: both;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+/* tr:nth-child(odd) {
+    background-color: #cdcdcd;
+} */
+tr > th{
+    background-color: #cdcdcd;
+    }
+body{
+}
+#wrapper{
+    background-color: #f0f0f0;
+}
+/* Heade */
+
+header{
+    background-color: #00cc66;
+    display: flex;
+    height: 80px;
+    line-height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    text-align: center;
+    margin: 0 auto;
+    float: left;
+    overflow: hidden;
+}
+header .logo{
+    width: 15%;
+    /* margin-top: 10px; */
+    /* position: relative;
+    top: 10px; */
+}
+header .logo .title-logo{
+    display: inline;
+    font-size: xx-large;
+    font-family:'Courier New', Courier, monospace;
+}
+header .logo #iconLogo{
+    width: 80px;
+    position: relative;
+    top: 10px;
+}
+header .timKiem{
+    width: 40%;
+    /* position: relative;
+    left: 78px; */
+}
+header .timKiem #timkiemSP{
+    font-size: 20px;
+    padding-right:8px ;
+    border-radius: 10px 0 0 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-right: -12px;
+    width: 60%;
+    opacity: 0.99;
+}
+header .timKiem #btnTimKiemSP{
+    font-size: 20px;
+    margin: 0 0px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 4px 4px;
+    background-color: #c9d3de;
+    padding-left: 8px;
+}
+header .nguoidung{
+    width: 25%;
+}
+header .nguoidung i{
+    width: 36px;
+    height: 36px;
+    background-color: #ccc;
+    border-radius: 50%;
+    line-height: 35px;
+}
+.nguoidung img{
+    position: relative;
+    top: 20px;
+    border-radius:50% ;
+}
+header .nguoidung .dangnhap-dangky{
+    color: #000!important;
+}
+header .nguoidung .dangnhap-dangky:hover{
+    cursor: pointer;
+    color: #fff!important;
+}
+header .nguoidung #iconNguoiDung{
+    width: 32px;
+    margin-bottom: -3px;
+}
+header .title{
+    width: 20%;
+}
+/* wrapper-container */
+
+.wrapper-container{
+    margin-top: 80px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #fff;
+    padding-bottom: 12px;
+}
+.wrapper-container .sidebar-left{
+    position: fixed;
+    background-color: rgba(43, 220, 99, 0.55);
+    width: 20%;
+    left: 0;
+    height: 100%;
+
+}
+.sidebar-left .header-sidebar{
+    text-align: center;
+    line-height: 70px;
+    font-size: 22px;
+    background-color: rgba(43, 220, 99, 0.65);
+    /* user-select: none; */
+}
+.header-sidebar a{
+    color: #000;
+}
+
+.conntent-sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: rgba(255, 255, 255,.1) 1px solid;
+    border-bottom: white 1px solid;
+    transition: .4s;
+    color: #000;
+}
+ul li:hover a{
+    padding-left: 50px;
+    background-color: #c9d3de;
+}ul .li_hover a{
+    padding-left: 50px;
+    background-color: #c9d3de;
+}
+.chuc_nang .fa-solid{
+    padding-right: 8px;
+}
+
+/* Đóng mở sidebar */
+.nut_dong_sidebar{
+    animation: backModal ease 1.5s;
+    display: none;
+}
+#nut_mo_sidebar {
+    padding-left: 24px;
+    font-size: xx-large;
+    color: black;
+    float: left;
+}
+@keyframes comeModal {
+    from{
+        opacity: 0;
+        transform: translateX(-500px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.main-mo{
+    width: 100%!important;
+}
+/* ------------------------------------- */
+/* main */
+
+.wrapper-container .main{
+    width: 80%;
+    float: right;
+    padding:24px;
+    
+}
+.main .title-main{
+    text-align: center;
+    margin-bottom: 28px;
+    font-size: x-large;
+    font-family: cursive;
+    font-weight: 800;
+    background-color: rgb(247, 247, 247);
+    border: #cdcdcd solid 0.1px;
+    border-radius:5px ;
+    height: 54px;
+    line-height: 54px;
+}
+
+.main-container tr th,td{
+    font-family: cursive;
+}
+
+
+/* Bảng điểu khiển */
+/* main-left */
+.main-left{
+    float: left;
+    width: 42%;
+}
+
+/* wrapper-card */
+.wrapper-card{
+    /* display: flex;
+    justify-items: center;
+    justify-content: space-between; */
+}
+/* card */
+.card{
+    height: 130px;
+    background-color: #fff;
+    margin-right: 30px;
+    margin-bottom: 26px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 2px 1px black;  
+}
+.card .logo-card{
+    float: left;
+    height: 100%;
+    width: 25%;
+    line-height: 100px;
+    margin-right: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 10px;
+    background-color: rgba(43, 220, 99, 0.65);
+    text-align: center;
+}
+
+.card .header-card{
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #d20000;
+    font-size: 15px;
+    height: 35%;
+}
+
+.card .content-card{
+    margin: 0;
+    height: 30%;
+    font-size: 18px;
+    font-weight: 500;
+}
+.card .footer-card{
+    font-size: 12px !important;
+    height: 35%;
+}
+
+/* main right */
+.main-right{
+    width: 58%;
+    float: right;
+}
+.main-right .table{
+    padding: 12px;
+    box-shadow: 0px 1px 2px 1px black;
+    margin-bottom: 44px;
+    border-radius: 10px;
+}
+.table .header-table{
+    text-align: center;
+    padding-bottom: 16px;
+    border-bottom: 0.5px solid #00cc66;text-transform: uppercase;
+    margin: 0;
+    font-weight: 600;
+    color: #d20000;
+    font-size: 15px;
+}
+.table table{
+    display: block;
+    padding-top: 16px;
+}
+
+
+/* Quản lí sản phẩm */
+/* img */
+img {
+    width: 50px;
+}
+
+
+/* Phân trang */
+.main .nutphantrang{
+    text-align: center;
+    margin-bottom: 24px;
+    margin-top: 24px;
+}
+.main .nutphantrang a{
+    color: #000;
+}
+.main .btn-phantrang{
+    margin-right: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 10%;
+}
+.main .btn-phantrang:hover
+, .nut-sang{
+    background-color: rgb(179, 8, 8);
+}

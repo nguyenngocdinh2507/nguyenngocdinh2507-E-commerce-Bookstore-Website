@@ -1,0 +1,62 @@
+.main{
+    margin-top: 96px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1270px;
+    background-color: #fff;
+    padding-bottom: 12px;
+}
+/* sidebar-left */
+.main .sidebar-left .heading-danhmucsach{
+    background-color: rgb(47, 175, 15);
+    padding: 8px 16px 8px 28px;
+    border-bottom:#f0f0f0 1px solid ;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.main .sidebar-left .li-danhmucsach{
+    padding: 8px 16px 8px 28px;
+    border-bottom:#f0f0f0 1px solid ;
+    cursor: pointer;
+}
+.main .sidebar-left .li-danhmucsach:hover{
+    background-color: #f0f0f0;
+    border: #000 1px solid;
+}
+.main .sidebar-left .btn-khoangGia{
+    cursor: pointer;
+    color: rgb(36, 36, 36);
+    border-radius: 12px;
+    margin-bottom: 4px;
+    padding: 2px 12px;
+    line-height: 20px;
+    display: inline-block;
+}
+.main .sidebar-left .ipt-khoangGia{
+    width: 84px;
+    height: 30px;
+    padding: 0px 8px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    text-align: left;
+    border: 1px solid rgb(184, 184, 184);
+    outline: 0px;
+    font-size: 13px;
+    margin:4px 0px 0 3px;
+}
+/* map */
+#blockMap{
+    padding: 10px 20px;
+    background-color: #ccc;
+    margin-bottom: 15px;
+}
+/* content */
+.main .content{
+    border-left: #f0f0f0 1px solid;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.main .content p{
+    margin: 18px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}

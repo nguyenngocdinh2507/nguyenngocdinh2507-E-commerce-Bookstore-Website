@@ -1,0 +1,12 @@
+# Bật module rewrite để viết lại URL
+RewriteEngine On
+
+# Đặt thư mục gốc của ứng dụng
+RewriteBase /WebBanSachPHP/
+
+# Nếu yêu cầu là file hoặc thư mục thật, không can thiệp
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Tất cả yêu cầu khác sẽ được chuyển đến index.php
+RewriteRule ^(.*)$ index.php/$1 [QSA,L]

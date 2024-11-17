@@ -1,0 +1,226 @@
+/* reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even) {
+  background-color: #cdcdcd;
+}
+
+/* Dùng chung */
+.text-white{
+    color: #fff !important;
+}
+.text-black{
+    color: #000 !important;
+}
+.inline{
+    display: inline;
+}
+.row{
+
+}
+.row::after{
+    content:"";
+    display: flex;
+    clear: both;
+}
+.col{
+    float: left;
+}
+.col-1{
+    width: 100%;
+}
+.col-2{
+    width: 50%;
+}
+.col-3{
+    width: 33.33333%;
+}
+.col-4{
+    width: 25%;
+}
+.col-5{
+    width: 20%;
+}
+.clear{
+    clear: both;
+}
+body{
+}
+#wrapper{
+}
+/* Heade */
+header{
+    background-color: #00cc66;
+    display: flex;
+    height: 80px;
+    line-height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    text-align: center;
+    margin: 0 auto;
+    float: left;
+    overflow: hidden;
+}
+header .logo{
+    width: 15%;
+    height: 100% !important;
+    /* margin-top: 10px; */
+    /* position: relative;
+    top: 10px; */
+}
+header .logo .title-logo{
+    display: inline;
+    font-size: xx-large;
+    font-family:'Courier New', Courier, monospace;
+}
+header .logo .a-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+header .logo #iconLogo{
+    display: block;
+    width: 80px;
+    
+
+}
+header .timKiem{
+    width: 40%;
+}
+header .timKiem #timkiemSP{
+    font-size: 20px;
+    padding-right:8px ;
+    padding-left:8px ;
+    border-radius: 10px 0 0 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-right: -12px;
+    width: 60%;
+    opacity: 0.99;
+}
+header .timKiem #btnTimKiemSP{
+    font-size: 20px;
+    margin: 0 0px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 4px 12px 4px 16px;
+    background-color: #c9d3de;
+}
+header .nguoidung{
+    width: 15%;
+}
+header .nguoidung i{
+    width: 36px;
+    height: 36px;
+    background-color: #c9d3de;
+    border-radius: 50%;
+    line-height: 35px;
+}
+header .nguoidung .dangnhap-dangky{
+    color: #000!important;
+}
+header .nguoidung .dangnhap-dangky:hover{
+    cursor: pointer;
+    color: #fff!important;
+}
+header .nguoidung #iconNguoiDung{
+    width: 32px;
+    margin-bottom: -3px;
+}
+
+header .giohang{
+    width: 15%;
+    cursor: pointer;
+    position: relative;
+
+}
+header .giohang i{
+    width: 36px;
+    height: 36px;
+    background-color: #c9d3de;
+    border-radius: 50%;
+    line-height: 35px;
+}
+header .giohang #iconGioHang{
+    width: 32px;
+    margin-bottom: -3px;
+}
+header .giohang #demSanPham {
+    position: relative;
+    top: -12px;
+    left: -12px;
+}
+header .giohang >a {
+    color: #000;
+}
+header .giohang >a:hover {
+    color: #FFF;
+}
+
+/* Đơn hàng */
+header .donhang{
+    width: 15%;
+}
+header .donhang i{
+    width: 36px;
+    height: 36px;
+    background-color: #c9d3de;
+    border-radius: 50%;
+    line-height: 35px;
+}
+header .donhang >a {
+    color: #000;
+}
+header .donhang >a:hover {
+    color: #FFF;
+}
+
+/* nav */
+.nav{
+    background-color: #2589f4;
+    position:relative;
+    top: 80px;
+    left: 0;
+    right: 0;
+    /* bottom: 0; */
+    text-align: center;
+    height: 44px;
+    line-height: 44px;
+    /* margin-bottom: 20px; */
+}
+.nav p{
+    font-family: "Inter", sans-serif;
+    display: inline;
+    text-align: center;
+}
+
+/* Reponsive Header */
+
+@media screen and (max-width: 500px) {
+    header{
+        display: block;
+    }
+}

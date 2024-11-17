@@ -1,0 +1,189 @@
+/* reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even) {
+  background-color: #fff!important;
+}
+
+/* Dùng chung */
+.text-white{
+    color: #fff !important;
+}
+.text-black{
+    color: #000 !important;
+}
+.inline{
+    display: inline;
+}
+.row{
+
+}
+.row::after{
+    content:"";
+    display: flex;
+    clear: both;
+}
+.col{
+    float: left;
+}
+.col-1{
+    width: 100%;
+}
+.col-2{
+    width: 50%;
+}
+.col-3{
+    width: 33.33333%;
+}
+.col-4{
+    width: 25%;
+}
+.col-5{
+    width: 20%;
+}
+.clear{
+    clear: both;
+}
+body{
+}
+#wrapper{
+}
+/* Heade */
+
+/* nav */
+.nav{
+    background-color: #2589f4;
+    position:relative;
+    top: 80px;
+    left: 0;
+    right: 0;
+    /* bottom: 0; */
+    text-align: center;
+    height: 44px;
+    line-height: 44px;
+    /* margin-bottom: 20px; */
+}
+.nav p{
+    font-family: "Inter", sans-serif;
+    display: inline;
+}
+/* container */
+#container{
+    margin-top: 96px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1040px;
+    /* background-color: #fff; */
+    margin-bottom: 100px;
+}
+/* map */
+#blockMap{
+    padding: 10px 20px;
+    background-color: #ccc;
+    margin-bottom: 15px;
+}
+
+/* main */
+.main{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    background-color: #fff;
+}
+
+/* Left-content */
+.left-content{
+    width: 25%;
+    float: left;
+    padding: 0;
+    margin-bottom: 10px;
+    background-color: #f2f2f2;
+}
+.left-content li:hover
+,.left-content li a:hover{
+    cursor: pointer;
+    color: #00cc66;
+}
+.left-content li{
+    padding: 4px 12px;
+}
+.left-content li a{
+    color: #000;
+}
+
+.right-content{
+    width: 70%;
+    float: right;
+}
+.font-dk .note{
+    padding: 5px 0;
+    font-weight: normal;
+    font-size: 18px;
+    color: #303030;
+}
+.error {
+    margin: 12px 140px 12px;
+}
+.error-span {
+    padding-left: 12px;
+    color: #e72626;
+}
+.font-dk .dk-ttin{
+    display: flex;
+    padding: 8px 0;
+}
+.font-dk .dk-label{
+    display: block;
+    text-align: left;
+    padding: 9px 5px 0 0;
+    width: 150px;
+    font-size: 14px;
+    color: #414141;
+}
+.font-dk .ip-dk{
+    font-size: 13px;
+    border: 1px solid #D8D3D0;
+    border-radius: 2px 2px 2px 2px;
+    margin: 0;
+    color: #858585;
+    height: 40px;
+    padding: 10px;
+    width: 280px;
+}
+.font-dk .ip-gioitinh{
+    margin:0px 12px 0 8px;
+}
+.footer-dk .btn-dk{
+    display: block;
+    float: left;
+    background: #00cc66;
+    border: 1px solid #00cc66;
+    color: #fff;
+    padding: 8px 30px 8px 30px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}

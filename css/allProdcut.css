@@ -1,0 +1,181 @@
+.main{
+    margin-top: 96px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1270px;
+    background-color: #fff;
+    padding-bottom: 12px;
+}
+
+/* map */
+#blockMap{
+    padding: 10px 20px;
+    background-color: #ccc;
+    margin-bottom: 24px;
+}
+#map_tim_kiem {
+    margin-bottom: 24px;
+    font-size: x-large;
+    color: #E60035;
+}
+
+
+/* sidebar-left */
+.main .sidebar-left{
+    width: 15%;
+    float: left;
+}
+.main .sidebar-left .heading-danhmucsach{
+    background-color: #00cc66;
+    padding: 8px 16px 8px 28px;
+    border-bottom:#f0f0f0 1px solid ;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.main .sidebar-left .li-danhmucsach{
+    padding: 8px 16px 8px 28px;
+    border-bottom:#f0f0f0 1px solid ;
+    cursor: pointer;
+}
+.main .sidebar-left .li-danhmucsach:hover{
+    background-color: #f0f0f0;
+    border: #000 1px solid;
+}
+.main .sidebar-left .btn-khoangGia{
+    cursor: pointer;
+    color: rgb(36, 36, 36);
+    border-radius: 12px;
+    margin-bottom: 4px;
+    padding: 2px 12px;
+    line-height: 20px;
+    display: inline-block;
+}
+.main .sidebar-left .ipt-khoangGia{
+    width: 84px;
+    height: 30px;
+    padding: 0px 8px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    text-align: left;
+    border: 1px solid rgb(184, 184, 184);
+    outline: 0px;
+    font-size: 13px;
+    margin:4px 0px 0 3px;
+}
+
+/* content */
+.main .content{
+    border-left: #f0f0f0 1px solid;
+    padding-left: 4px;
+    padding-right: 4px;
+    width: 85%;
+    float: right;
+}
+
+/* card product */
+.content .product{
+    padding-top: 10px;
+    border-top: solid 1px #f0f0f0;
+}
+#layoutGroup1 .block h2 {
+    background: #f2f2f2;
+    font-family: "Times New Roman", Times, serif;
+    padding: 0;
+    height: 38px;
+    margin: 4px 10px 25px;
+}
+#layoutGroup1 .block h2 a.title {
+    position: relative;
+    font-size: 18px;
+    line-height: 38px;
+    font-weight: bold;
+    color: #fff;
+    background: #00cc66;
+    padding: 9px 20px 9px 15px;
+    text-transform: capitalize;
+    margin: 0;
+    border-radius: 0 50% 50% 0;
+}
+#layoutGroup1 .block h2 a.more {
+    font-size: 14px;
+    color: #595959;
+    float: right;
+    padding: 8px 20px;
+}
+#layoutGroup1 .block h2 a.more:hover
+{
+	color:#00cc66
+}
+.content .card{
+    display: block;
+    margin: 4px 10px 25px;
+    background-color: #ccc;
+    /* border: 1px black solid; */
+    border-radius: 5px;
+    padding: 12px 12px 0 12px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.content .card:hover{
+    background-color: #ccc;
+}
+.card .img{
+    padding-bottom: 10px;
+}
+.card .img img:hover{
+    cursor: pointer;
+    top: 0px;
+}
+.card .img img{
+    width: 100%;
+    height: 280px;
+    transition: 0.4s ease-in-out;
+    position: relative;
+    top: 10px;
+}
+.content .tensp{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    height: 52px;
+}
+.content .tensp:hover{
+    color: #00cc66;
+}
+.content .giasp{
+    /* text-align: center; */
+    padding-bottom: 5px;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 4px 0;
+}
+.content .giasp p{
+    color: #FF424E;
+}
+.content .muahang{
+    padding-bottom: 10px;
+}
+.content .btn-cart{
+    width: 100%;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+/* Phân trang */
+.content .nutphantrang{
+    text-align: center;
+    margin-bottom: 24px;
+}
+.content .btn-phantrang{
+    margin-right: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 50%;
+    color: #000;
+}
+.content .btn-phantrang:hover
+, .nut-sang{
+    background-color: #00cc66;
+}
