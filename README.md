@@ -5,7 +5,7 @@ This is a **Bookstore Website** project developed as part of the *Advanced Web P
 # Contribution
 This project was developed by:
 
-- Nguyễn Ngọc Đính (3120410130)
+- Nguyễn Ngọc Đính (3120410130) - Team Leader
 - Phạm Triều Điền (3120410129)
 - Huỳnh Thành Đạt (3120410113)
 
