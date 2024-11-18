@@ -123,7 +123,7 @@ body{
 .left-content li:hover
 ,.left-content li a:hover{
     cursor: pointer;
-    color: #00cc66;
+    color: rgb(60, 181, 147);
 }
 .left-content li{
     padding: 4px 12px;
@@ -177,8 +177,8 @@ body{
 .footer-dk .btn-dk{
     display: block;
     float: left;
-    background: #00cc66;
-    border: 1px solid #00cc66;
+    background: rgb(60, 181, 147);
+    border: 1px solid rgb(60, 181, 147);
     color: #fff;
     padding: 8px 30px 8px 30px;
     font-size: 14px;

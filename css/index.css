@@ -111,7 +111,7 @@ body{
     float: left;
 }
 .main .sidebar-left .heading-danhmucsach{
-    background-color: #00cc66;
+    background-color:rgb(60, 181, 147);
     padding: 8px 16px 8px 28px;
     border-bottom:#f0f0f0 1px solid ;
     font-weight: 500;
@@ -177,7 +177,7 @@ body{
     line-height: 38px;
     font-weight: bold;
     color: #fff;
-    background: #00cc66;
+    background: rgb(60, 181, 147);
     padding: 9px 20px 9px 15px;
     text-transform: capitalize;
     margin: 0;
@@ -191,7 +191,7 @@ body{
 }
 #layoutGroup1 .block h2 a.more:hover
 {
-	color:#00cc66
+	color:rgb(60, 181, 147);
 }
 .content .card{
     display: block;
@@ -229,7 +229,7 @@ body{
     height: 52px;
 }
 .content .tensp:hover{
-    color: #00cc66;
+    color:rgb(60, 181, 147);
 }
 .content .giasp{
     /* text-align: center; */
@@ -246,7 +246,7 @@ body{
 }
 .content .btn-cart:hover{
     color: #000;
-    background-color: #00cc66;
+    background-color: rgb(60, 181, 147);
 }
 .content .btn-cart{
     width: 100%;
