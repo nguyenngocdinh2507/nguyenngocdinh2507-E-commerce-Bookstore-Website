@@ -46,4 +46,44 @@ This project was developed by:
 - **Development Environment:** Visual Studio Code, XAMPP
 - **Testing and Collaboration:** Postman, Google Meet, Zalo
 
+# Bookstore Website
 
+## Screenshots
+
+#### Homepage and Login
+<p align="center">
+  <img src="image/homePage.png" alt="Homepage" width="45%">
+  <img src="image/login.png" alt="Login Page" width="45%">
+</p>
+
+#### Product Details and Cart
+<p align="center">
+  <img src="image/productDetail.png" alt="Product Details" width="45%">
+  <img src="image/cart.png" alt="Cart" width="45%">
+</p>
+
+#### Order and Register
+<p align="center">
+  <img src="image/order.png" alt="Order Page" width="45%">
+  <img src="image/register.png" alt="Register Page" width="45%">
+</p>
+
+### Admin Interface
+
+#### Dashboard and Order Management
+<p align="center">
+  <img src="image/admin1.png" alt="Admin Dashboard" width="45%">
+  <img src="image/admin2.png" alt="Order Management" width="45%">
+</p>
+
+#### Book Management and Statistics
+<p align="center">
+  <img src="image/admin3.png" alt="Book Management" width="45%">
+  <img src="image/admin4.png" alt="Statistics" width="45%">
+</p>
+
+#### Customer Management and Settings
+<p align="center">
+  <img src="image/admin5.png" alt="Customer Management" width="45%">
+  <img src="image/admin6.png" alt="Settings" width="45%">
+</p>
