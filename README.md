@@ -2,6 +2,13 @@
 
 This is a **Bookstore Website** project developed as part of the *Advanced Web Programming* course at Saigon University. The goal of this project is to create an online platform for buying and selling books, providing users with an easy, convenient, and efficient shopping experience.
 
+# Contribution
+This project was developed by:
+
+- Nguyễn Ngọc Đính (3120410130)
+- Phạm Triều Điền (3120410129)
+- Huỳnh Thành Đạt (3120410113)
+
 ## Features
 
 ### For Users:
