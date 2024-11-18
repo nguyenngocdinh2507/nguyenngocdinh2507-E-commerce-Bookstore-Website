@@ -50,22 +50,22 @@ This project was developed by:
 
 ## Screenshots
 
-#### Homepage and Login
+#### Register and Login
 <p align="center">
-  <img src="image/homePage.png" alt="Homepage" width="45%">
+  <img src="image/register.png" alt="Register Page" width="45%"> 
   <img src="image/login.png" alt="Login Page" width="45%">
 </p>
 
-#### Product Details and Cart
+#### Product Details and Homepage
 <p align="center">
   <img src="image/productDetail.png" alt="Product Details" width="45%">
-  <img src="image/cart.png" alt="Cart" width="45%">
+  <img src="image/homePage.png" alt="Homepage" width="45%">
 </p>
 
-#### Order and Register
+#### Cart and Order
 <p align="center">
+  <img src="image/cart.png" alt="Cart" width="45%">
   <img src="image/order.png" alt="Order Page" width="45%">
-  <img src="image/register.png" alt="Register Page" width="45%">
 </p>
 
 ### Admin Interface
